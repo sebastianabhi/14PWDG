@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Hotel Reservation</title>
+        <style type="text/css">
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                /* background: #f4f4f4; */
+                background-image: linear-gradient(rgb(255, 255, 255), rgb(225, 225, 255));
+                margin: 0;
+                padding: 0;
+            }
+
+            h1{
+                color: #333366;
+                /* text-align: center; */
+                border-bottom: 2px solid #eee;
+                padding-bottom: 10px;
+            }
+
+            h2{
+                /* color: #333366; */
+                /* text-align: center; */
+                border-bottom: 1px solid #eee;
+                padding-bottom: 2px;
+            }
+
+            #container{
+                width: 600px;
+                margin: 40px auto;
+                background: #fff;
+                border: 1px solid #ccc;
+                padding: 20px 30px 30px 30px;
+                box-shadow: 0 0 10px #ccc;
+            }
+
+            #box{
+                width: 600px;
+                margin: 22px auto;
+            }
+
+            #content{
+                margin-top: 20px;
+            }
+
+            #content sq{
+                margin-left: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" method="post" enctype="multipart/form-data">
+            <div id="container">
+                <h1>Hotel Room Reservation Form</h1>
+                <p>
+                    <td>
+                        <tr>Welcome!</tr>
+                        <tr>Thank you for choosing us, it's great to have you</tr>
+                        <tr>We look forward to serving you, please fill the form below</tr>
+                    </td>
+                </p>
+            </div>
+
+            <div id="container">
+                <div id="content">
+                    <h2>Personal Data</h2>
+
+                    <p>
+                        <td>
+                            <tr><label for="name"><strong>1. Name</strong></label></tr>
+                            <tr><sq><input type="text" id="name" name="name" size="25" /></sq></tr>
+                        </td>
+                    </p>
+
+                    <p>
+                        <td>
+                            <tr><label for="gender"><strong>2. Gender</strong></label></tr>
+                            <tr>
+                                <sq><input type="radio" name="gender" id="laki" value="Laki-laki" />
+                                <label for="laki">Laki-laki</label></sq>
+                                <sq><input type="radio" name="gender" id="perempuan" value="Perempuan" />
+                                <label for="perempuan">Perempuan</label></sq>
+                            </tr>
+                        </td>
+                    </p>
+
+                    <p>
+                        <td>
+                            <tr><label for="email"><strong>3. Email Address</strong></label></tr>
+                            <tr><sq><input type="text" name="email" id="email" size="25" /></sq></tr>
+                        </td>
+                    </p>
+
+                    <p>
+                        <td>
+                            <tr><label for="phone"><strong>4. Phone Number</strong></label></tr>
+                            <tr><sq><input type="text" name="phone" id="phone" size="25" /></sq></tr>
+                        </td>
+                    </p>
+                </div>
+            </div>
+
+            <div id="container">
+                <div id="content">
+                    <h2>Room Reservation</h2>
+
+                    <p>
+                        <td>
+                            <tr><label for="rname"><strong>1. Reservation Name</strong></label></tr>
+                            <tr><sq><input type="text" id="rname" name="rname" size="25" /></sq></tr>
+                        </td>
+                    </p>
+
+                    <p>
+                        <td>
+                            <tr><label for="bookdate"><strong>2. Booking Date</strong></label></tr>
+                            <tr><sq><input type="date" id="bookdate" name="bookdate" size="25" /></sq></tr>
+                        </td>
+                    </p>
+
+                    <p>
+                        <td>
+                            <tr><label for="room"><strong>3. Room Type</strong></label></tr>
+                            <tr><sq><select id="room" name="room">
+                                <option>Standart</option>
+                                <option>Premium</option>
+                                <option>Deluxe</option>
+                            </select></sq></tr>
+                        </td>
+                    </p>
+
+                    <p>
+                        <td>
+                            <tr><label for="bed"><strong>4. Bed Size</strong></label></tr>
+                            <tr><sq><select id="bed" name="bed">
+                                <option>Twin</option>
+                                <option>Double</option>
+                                <option>Queen</option>
+                                <option>King</option>
+                            </select></sq></tr>
+                        </td>
+                    </p>
+
+                    <p>
+                        <td>
+                            <tr><label for="breakfast"><strong>5. Breakfast Option</strong></label></tr>
+                            <tr>
+                                <sq><input type="radio" name="breakfast" id="withb" value="With Breakfast" />
+                                <label for="withb">With Breakfast</label></sq>
+                                <sq><input type="radio" name="breakfast" id="withoutb" value="Without Breakfast" />
+                                <label for="withoutb">Without Breakfast</label></sq>
+                            </tr>
+                        </td>
+                    </p>
+                </div>
+            </div>
+
+            <div id="container">
+                <div id="content">
+                    <h2>Payment</h2>
+
+                    <p>
+                        <td>
+                            <tr><label for="indate"><strong>1. Check in Date</strong></label></tr>
+                            <tr><sq><input type="date" id="indate" name="indate" /></sq></tr>
+                        </td>
+                    </p>
+
+                    <p>
+                        <td>
+                            <tr><label for="outdate"><strong>2. Check out Date</strong></label></tr>
+                            <tr><sq><input type="date" id="outdate" name="outdate" /></sq></tr>
+                        </td>
+                    </p>
+
+                    <p>
+                        <td>
+                            <tr><label for="payment"><strong>3. Payment Method</strong></label></tr>
+                            <tr><sq><select id="payment" name="payment">
+                                <option>Card</option>
+                                <option>Cash</option>
+                            </select></sq></tr>
+                        </td>
+                    </p>
+                </div>
+            </div>
+
+            <div id="box">
+                <input type="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+    </body>
+</html>

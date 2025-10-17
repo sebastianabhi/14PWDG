@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Reservation Hotel Room</title>
+    </head>
+    <body>
+        <h1>Reservation Hotel Room</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+            <table>
+                <td><strong>Personal Date</strong></td>
+            </table>
+            <table cellspacing="5" cellpadding="5" border="1" style="width: 100%;">
+                <tr><label for="name"><strong>1. Name</strong></label></tr>
+                <tr><input type="text" id="name" name="name" size="30" /></tr>
+                <tr> </tr>
+                <tr><label for="gender"><strong>2. Gender</strong></label></tr>
+                <tr><input type="text" id="gender" name="gender" size="30" /></tr>
+                <tr> </tr>
+                <tr><label for="email"><strong>3. Email Address</strong></label></tr>
+                <tr><input type="text" id="email" name="email" size="30" /></tr>
+                <tr> </tr>
+                <tr><label for="telp"><strong>4. Telp Number</strong></label></tr>
+                <tr><input type="text" id="telp" name="telp" size="30" /></tr>
+                <tr></tr>
+            </table>
+
+            <table>
+                <td><strong>Reservation Room Form</strong></td>
+            </table>
+            <table cellspacing="5" cellpadding="5" border="1" style="width: 100%;">
+                <tr><label for="rname"><strong>1. Reservation Name</strong></label></tr>
+                <tr><input type="text" id="rname" name="rname" size="30" /></tr>
+                <tr> </tr>
+                <tr><label for="bookdate"><strong>2. Booking Date</strong></label></tr>
+                <tr><input type="text" id="bookdate" name="bookdate" size="30" /></tr>
+                <tr> </tr>
+                <tr><label for="room"><strong>3. Room Type</strong></label></tr>
+                <tr><select name="room" id="room">
+                    <option>Standart</option>
+                    <option>Premium</option>
+                    <option>Deluxe</option>
+                </select></tr>
+                <tr> </tr>
+                <tr><label for="bed"><strong>4. Bed Type</strong></label></tr>
+                <tr><select name="bed" id="bed">
+                    <option>Twin</option>
+                    <option>Double</option>
+                    <option>Queen</option>
+                    <option>King</option>
+                </select></tr>
+                <tr> </tr>
+                <tr><label for="breakfast"><strong>5. Breakfast</strong></label></tr>
+                <tr><input type="radio" id="withb" name="breakfast" value="With Breakfast" />
+                <label for="withb">With Breakfast</label>
+                <input type="radio" id="withoutb" name="breakfast" value="Without Breakfast" />
+                <label for="withoutb">Without Breakfast</label></tr>
+                <tr></tr>
+            </table>
+
+            <table>
+                <td><strong>Payment</strong></td>
+            </table>
+            <table cellspacing="5" cellpadding="5" border="1" style="width: 100%;">
+                <tr><label for="indate"><strong>1. Check in Date</strong></label></tr>
+                <tr><input type="text" id="indate" name="indate" size="30" /></tr>
+                <tr> </tr>
+                <tr><label for="outdate"><strong>2. Check out Date</strong></label></tr>
+                <tr><input type="text" id="outdate" name="outdate" size="30" /></tr>
+                <tr> </tr>
+                <tr><label for="payment"><strong>3. Payment</strong></label></tr>
+                <tr><select name="payment" id="payment">
+                    <option>Card</option>
+                    <option>Cash</option>
+                </select></tr>
+                <tr></tr>
+            </table>
+
+            <table cellspacing="5" cellpadding="5" style="width: 100%;">
+                <td><input type="submit" name="submit" value="Submit" /></td>
+            </table>
+        </form>
+    </body>
+</html>
